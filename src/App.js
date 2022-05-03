@@ -1,14 +1,14 @@
 import NavBar from "./components/NavBar";
 import Routes from "./routes";
-import { MainContainer } from "./styles";
-import GlobalStyle from "./styles/global";
+import { MainContainer, SectionContent } from "./styles";
 
 function App() {
   return (
     <MainContainer>
-      <GlobalStyle />
       <NavBar />
-      <Routes />
+      <SectionContent>
+        <Routes />
+      </SectionContent>
     </MainContainer>
   );
 }

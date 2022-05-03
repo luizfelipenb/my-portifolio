@@ -13,9 +13,6 @@ const NavBar = () => {
           <button onClick={() => history.push("/projetos")}>Projetos</button>
         </li>
         <li>
-          <button onClick={() => history.push("/sobre")}>Sobre</button>
-        </li>
-        <li>
           <button onClick={() => history.push("/contato")}>Contato</button>
         </li>
       </ul>
