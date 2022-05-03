@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 10px;
   button {
     font-size: 18px;
     font-weight: bold;
