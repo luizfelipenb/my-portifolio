@@ -4,7 +4,7 @@ export const MainContainer = styled.main`
   background: #232526;
   background: -webkit-linear-gradient(to right, #414345, #232526);
   background: linear-gradient(to right, #414345, #232526);
-  /* height: 100vh; */
+  height: 100%;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,8 @@ export const MainContainer = styled.main`
 
 export const SectionContent = styled.section`
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
