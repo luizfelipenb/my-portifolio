@@ -1,31 +1,18 @@
 import { Container } from "./styles";
+import { motion } from "framer-motion";
+import { useModalHandlers } from "../../providers/ModalHandlers";
+
 import SectionName from "../../components/SectionName";
 import SectionDescription from "../../components/SectionDescription";
-import { motion } from "framer-motion";
+import ModalContact from "../../components/ModalContact";
+
+import dropIn from "../../styles/motionVar";
 
 const Dashboard = () => {
-  const dropIn = {
-    hidden: {
-      y: "-100vh",
-      opacity: 0,
-    },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 2,
-        type: "spring",
-        damping: 100,
-        stiffness: 500,
-      },
-    },
-    exit: {
-      y: "100vh",
-      opacity: 0,
-    },
-  };
+  const { showModal } = useModalHandlers();
   return (
     <Container>
+      {showModal && <ModalContact />}
       <motion.section
         variants={dropIn}
         initial="hidden"

@@ -25,6 +25,8 @@ export const Container = styled.section`
 
         &::after {
           content: attr(aria-label);
+          margin-left: 90px;
+          margin-top: 70px;
           white-space: pre-wrap;
           pointer-events: none;
           transition: 1s;
@@ -34,7 +36,7 @@ export const Container = styled.section`
           padding: 10px;
           border-radius: 8px;
           position: absolute;
-          max-width: 100px;
+          max-width: 150px;
         }
         img {
           border-radius: 8px;
