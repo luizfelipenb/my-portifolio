@@ -1,18 +1,14 @@
 import { Container } from "./styles";
 import { motion } from "framer-motion";
-import { useModalHandlers } from "../../providers/ModalHandlers";
 
 import SectionName from "../../components/SectionName";
 import SectionDescription from "../../components/SectionDescription";
-import ModalContact from "../../components/ModalContact";
 
 import dropIn from "../../styles/motionVar";
 
 const Dashboard = () => {
-  const { showModal } = useModalHandlers();
   return (
     <Container>
-      {showModal && <ModalContact />}
       <motion.section
         variants={dropIn}
         initial="hidden"
