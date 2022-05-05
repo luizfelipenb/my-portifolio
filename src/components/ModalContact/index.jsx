@@ -18,7 +18,7 @@ const ModalContact = () => {
       >
         <IoClose size={25} onClick={() => setShowModal((prev) => !prev)} />
         <a
-          href="https://mail.google.com/mail/u/0/?fs=1&to={luizfelipedeoliveirap@gmail.com}&tf=cm"
+          href="https://mail.google.com/mail/u/0/?fs=1&to=luizfelipedeoliveirap@gmail.com&tf=cm"
           target="blank"
         >
           <FcGoogle size={30} />
