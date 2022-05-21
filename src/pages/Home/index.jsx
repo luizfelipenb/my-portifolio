@@ -6,7 +6,7 @@ import SectionDescription from "../../components/SectionDescription";
 
 import dropIn from "../../styles/motionVar";
 
-const Dashboard = () => {
+const Home = () => {
   return (
     <Container>
       <motion.section
@@ -28,4 +28,4 @@ const Dashboard = () => {
     </Container>
   );
 };
-export default Dashboard;
+export default Home;

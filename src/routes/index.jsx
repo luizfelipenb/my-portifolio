@@ -1,13 +1,13 @@
 import { Switch, Route } from "react-router-dom";
 
-import Dashboard from "../pages/Dashboard";
+import Home from "../pages/Home";
 import Work from "../pages/Work";
 
 const Routes = () => {
   return (
     <Switch>
       <Route exact path="/">
-        <Dashboard />
+        <Home />
       </Route>
       <Route path="/projetos">
         <Work />
