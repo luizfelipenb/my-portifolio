@@ -37,6 +37,9 @@ body {
   #root{
 	  
   }
+  button{
+	  cursor: pointer;
+  }
 }
 ol, ul {
 	list-style: none;
