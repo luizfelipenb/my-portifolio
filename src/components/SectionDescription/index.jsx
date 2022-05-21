@@ -44,6 +44,7 @@ const SectionDescription = () => {
         <li>Postgre SQL *</li>
         <li>Docker *</li>
         <li>Type ORM *</li>
+        <li>Prisma</li>
       </ul>
       <span>Aprendendo *</span>
     </Container>
