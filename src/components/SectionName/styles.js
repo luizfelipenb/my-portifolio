@@ -12,7 +12,6 @@ export const Container = styled.section`
     width: 10px;
     font-size: 50px;
     font-weight: bold;
-    /* margin-left: 10px; */
   }
   div {
     width: 100px;
@@ -29,7 +28,7 @@ export const Container = styled.section`
   }
 
   @media screen and (min-width: 768px) {
-    margin-top: 40px;
+    margin-top: 7rem;
   }
   @media screen and (min-width: 1024px) {
     margin-left: 30px;
@@ -41,6 +40,6 @@ export const Container = styled.section`
     }
   }
   @media screen and (min-width: 1440px) {
-    margin-top: 25px;
+    margin-top: 15rem;
   }
 `;

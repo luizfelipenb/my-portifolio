@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.main`
-  background: #232526;
-  background: -webkit-linear-gradient(to right, #414345, #232526);
-  background: linear-gradient(to right, #414345, #232526);
-  height: 100%;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     height: 100vh;
@@ -16,13 +13,17 @@ export const MainContainer = styled.main`
 
 export const SectionContent = styled.section`
   width: 100%;
-  /* height: fit-content; */
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 2rem;
+
   @media screen and (min-width: 768px) {
     height: 100%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 1rem;
   }
 `;

@@ -5,6 +5,7 @@ export const Container = styled.section`
   flex-direction: column;
   align-items: center;
   width: 90%;
+  height: 100%;
   > section {
     :first-child {
       align-self: flex-start;
