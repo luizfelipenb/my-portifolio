@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 
 import projects from "../../mock/tecnologies";
 
-const FrontendProjects = () => {
+import React from "react";
+
+const FrontendProjects: React.FC = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}

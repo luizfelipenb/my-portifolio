@@ -1,7 +1,24 @@
 import { Container } from "./styles";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
 
-const Title = ({
+import React from "react";
+
+interface Props {
+  setShowFrontProjects: React.Dispatch<React.SetStateAction<boolean>>;
+  setShowBackProjects: React.Dispatch<React.SetStateAction<boolean>>;
+  children: React.ReactNode;
+}
+
+const handleVariation = (text: string) => {
+  if (text === "Frontend") {
+    return "red";
+  }
+  if (text === "Backend") {
+    return "red";
+  }
+};
+
+const Title: React.FC<Props> = ({
   setShowFrontProjects,
   setShowBackProjects,
   children,
@@ -17,7 +34,7 @@ const Title = ({
             children === "Frontend" && setShowFrontProjects((prev) => !prev)
           }
           cursor="pointer"
-          color={children === "Frontend" && "red"}
+          // color={() => handleVariation(children)}
         />
         {children}
         <strong> / </strong>
@@ -27,7 +44,7 @@ const Title = ({
             children === "Backend" && setShowBackProjects((prev) => !prev)
           }
           cursor="pointer"
-          color={children === "Backend" && "red"}
+          // color={children === "Backend" && "red"}
         />
       </span>
     </Container>

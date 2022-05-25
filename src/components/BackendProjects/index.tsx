@@ -1,7 +1,9 @@
 import { Container } from "./styles";
 import { motion } from "framer-motion";
 
-const BackendProjects = () => {
+import React from "react";
+
+const BackendProjects: React.FC = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}

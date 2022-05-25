@@ -3,15 +3,13 @@ import { Switch, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Work from "../pages/Work";
 
-const Routes = () => {
+import React from "react";
+
+const Routes: React.FC = () => {
   return (
     <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/projetos">
-        <Work />
-      </Route>
+      <Route exact path="/" component={Home} />
+      <Route path="/projetos" component={Work} />
     </Switch>
   );
 };

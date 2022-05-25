@@ -4,9 +4,11 @@ import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { useModalHandlers } from "../../providers/ModalHandlers";
 
+import React from "react";
+
 import dropIn from "../../styles/motionVar";
 
-const ModalContact = () => {
+const ModalContact: React.FC = () => {
   const { setShowModal } = useModalHandlers();
   return (
     <Container>

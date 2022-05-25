@@ -1,8 +1,11 @@
 import { Container } from "./styles";
 import { BsLinkedin, BsGithub, BsFileEarmarkTextFill } from "react-icons/bs";
 
+import React from "react";
+
 import { motion } from "framer-motion";
-const SectionName = () => {
+
+const SectionName: React.FC = () => {
   return (
     <Container>
       <h1>Luiz Felipe</h1>

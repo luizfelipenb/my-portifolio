@@ -1,8 +1,10 @@
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 import { Container } from "./styles";
 import { FaHome } from "react-icons/fa";
 
-const Logo = () => {
+import React from "react";
+
+const Logo: React.FC = () => {
   const history = useHistory();
   return (
     <Container>

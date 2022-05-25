@@ -9,7 +9,9 @@ import Title from "../../components/Title";
 import frontendpic from "../../assets/frontend.gif";
 import backendpic from "../../assets/backend.gif";
 
-const Work = () => {
+import React from "react";
+
+const Work: React.FC = () => {
   const [showFrontProjects, setShowFrontProjects] = useState(false);
   const [showBackProjects, setShowBackProjects] = useState(false);
   return (

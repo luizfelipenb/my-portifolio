@@ -1,4 +1,5 @@
 import Routes from "./routes";
+import React from "react";
 
 import { MainContainer, SectionContent } from "./styles";
 import { useModalHandlers } from "./providers/ModalHandlers";
@@ -6,7 +7,7 @@ import { useModalHandlers } from "./providers/ModalHandlers";
 import ModalContact from "./components/ModalContact";
 import NavBar from "./components/NavBar";
 
-function App() {
+const App: React.FC = () => {
   const { showModal } = useModalHandlers();
   return (
     <MainContainer>
@@ -17,6 +18,6 @@ function App() {
       </SectionContent>
     </MainContainer>
   );
-}
+};
 
 export default App;

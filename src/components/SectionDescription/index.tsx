@@ -1,6 +1,8 @@
 import { Container } from "./styles";
 
-const SectionDescription = () => {
+import React from "react";
+
+const SectionDescription: React.FC = () => {
   return (
     <Container>
       <h4>Profile</h4>

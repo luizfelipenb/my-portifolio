@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import SectionName from "../../components/SectionName";
 import SectionDescription from "../../components/SectionDescription";
 
+import React from "react";
+
 import dropIn from "../../styles/motionVar";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <Container>
       <motion.section

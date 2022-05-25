@@ -1,9 +1,13 @@
-import { useHistory } from "react-router-dom";
-import { useModalHandlers } from "../../providers/ModalHandlers";
-import Logo from "../Logo";
 import { Container } from "./styles";
 
-const NavBar = () => {
+import React from "react";
+
+import { useHistory } from "react-router-dom";
+import { useModalHandlers } from "../../providers/ModalHandlers";
+
+import Logo from "../Logo";
+
+const NavBar: React.FC = () => {
   const history = useHistory();
   const { setShowModal } = useModalHandlers();
   return (
