@@ -9,15 +9,6 @@ interface Props {
   children: React.ReactNode;
 }
 
-const handleVariation = (text: string) => {
-  if (text === "Frontend") {
-    return "red";
-  }
-  if (text === "Backend") {
-    return "red";
-  }
-};
-
 const Title: React.FC<Props> = ({
   setShowFrontProjects,
   setShowBackProjects,
@@ -34,7 +25,7 @@ const Title: React.FC<Props> = ({
             children === "Frontend" && setShowFrontProjects((prev) => !prev)
           }
           cursor="pointer"
-          // color={() => handleVariation(children)}
+          color={children === "Frontend" ? "red" : "white"}
         />
         {children}
         <strong> / </strong>
@@ -44,7 +35,7 @@ const Title: React.FC<Props> = ({
             children === "Backend" && setShowBackProjects((prev) => !prev)
           }
           cursor="pointer"
-          // color={children === "Backend" && "red"}
+          color={children === "Backend" ? "red" : "white"}
         />
       </span>
     </Container>

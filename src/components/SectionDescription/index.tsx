@@ -41,12 +41,12 @@ const SectionDescription: React.FC = () => {
         <li>Git</li>
         <li>HTML5</li>
         <li>CSS3</li>
-        <li>Typescript *</li>
-        <li>Node JS *</li>
-        <li>Postgre SQL *</li>
+        <li>Typescript</li>
+        <li>Node JS</li>
+        <li>Postgre SQL</li>
+        <li>Prisma</li>
         <li>Docker *</li>
         <li>Type ORM *</li>
-        <li>Prisma</li>
       </ul>
       <span>Aprendendo *</span>
     </Container>
