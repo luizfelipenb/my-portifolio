@@ -45,8 +45,10 @@ const SectionDescription: React.FC = () => {
         <li>Node JS</li>
         <li>Postgre SQL</li>
         <li>Prisma</li>
-        <li>Docker *</li>
-        <li>Type ORM *</li>
+        <li>Docker</li>
+        <li>Type ORM</li>
+        <li>Python *</li>
+        <li>Django *</li>
       </ul>
       <span>Aprendendo *</span>
     </Container>
