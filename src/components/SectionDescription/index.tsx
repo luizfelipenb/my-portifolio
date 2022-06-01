@@ -6,7 +6,7 @@ const SectionDescription: React.FC = () => {
   return (
     <Container>
       <h4>Profile</h4>
-      <h2>Frontend Web Developer</h2>
+      <h2>Full-stack Web Developer</h2>
       <p>
         Olá, meu nome é{" "}
         <a
