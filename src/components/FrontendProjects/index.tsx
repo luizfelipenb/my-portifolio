@@ -3,9 +3,11 @@ import { motion } from "framer-motion";
 
 import projects from "../../mock/tecnologies";
 
-import React from "react";
+import React, { useState } from "react";
+import ModalActionsProject from "../ModalActionsProject";
 
 const FrontendProjects: React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -16,18 +18,10 @@ const FrontendProjects: React.FC = () => {
       <Container>
         <ul className="listProjects">
           {projects.map((project) => (
-            <li>
-              <a
-                href={project.url}
-                target="blank"
-                role="tooltip"
-                aria-label={
-                  "Tecnologias utilizadas:     " + project.tecnologies
-                }
-              >
-                <h3>{project.name}</h3>
-                <img src={project.img_url} alt="imagem kenzie bico" />
-              </a>
+            <li onClick={() => setShowModal((prev) => !prev)}>
+              {showModal && <ModalActionsProject projectData={project} />}
+              <h3>{project.name}</h3>
+              <img src={project.img_url} alt="imagem kenzie bico" />
             </li>
           ))}
         </ul>
