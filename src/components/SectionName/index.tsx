@@ -31,7 +31,7 @@ const SectionName: React.FC = () => {
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <a
-            href="https://drive.google.com/file/d/19zfcjvq5toUm0YeM1a_hN6VMQuoLiCyo/view?usp=sharing"
+            href="https://drive.google.com/file/d/159qsmfWaBN6pEdOF5N6CmCKIn611lLyx/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
